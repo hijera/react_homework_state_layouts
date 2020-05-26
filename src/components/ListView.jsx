@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ShopItem from "./ShopItem";
 import '../css/main.css';
+import Product from "../models/Product";
 ListView.propTypes = {
-    
+    items: PropTypes.arrayOf(PropTypes.instanceOf(Product))
 };
 
 function ListView(props) {
